@@ -4,6 +4,7 @@
 
   padding: $gutter-half 0 $gutter-one-third;
   margin-bottom: $gutter-half;
+  list-style: none;
 
   @include media(tablet) {
     margin-bottom: $gutter-two-thirds;
@@ -16,22 +17,23 @@
     background-position: left center;
     padding: 0 $gutter-one-quarter 0 (11px + $gutter-one-quarter);
     white-space: nowrap;
+    display: inline-block;
 
     @include device-pixel-ratio(2) {
       background-image: url('/images/breadcrumbs/separator@2x.png');
     }
 
-    &:link,
-    &:hover,
-    &:active,
-    &:visited {
+    a:link,
+    a:hover,
+    a:active,
+    a:visited {
       color: $black;
     }
 
-    &--active:link,
-    &--active:hover,
-    &--active:active,
-    &--active:visited {
+    &--active a:link,
+    &--active a:hover,
+    &--active a:active,
+    &--active a:visited {
       @include bold-16;
       text-decoration: none;
     }
@@ -46,10 +48,10 @@
     border-bottom: 1px #377fb9 solid;
 
     .breadcrumbs__link {
-      &:link,
-      &:hover,
-      &:active,
-      &:visited {
+      a:link,
+      a:hover,
+      a:active,
+      a:visited {
         color: $white;
       }
     }
