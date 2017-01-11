@@ -1,0 +1,46 @@
+$hero-button-arrow-width: 26px;
+$hero-button-arrow-height: 30px;
+
+a.hero-button {
+  @include button($white);
+  @include bold-24;
+  @include box-shadow(0 2px 0 darken($govuk-blue, 10%));
+
+  background-image: file-url('/images/hero-button/arrow.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+
+  padding: 0.3684210526em 2.1578947368em 0.2105263158em 0.8421052632em; // 5px 34px 3px 13px
+
+  display: block;
+  text-align: center;
+
+  @include device-pixel-ratio(2) {
+    background-image: file-url('/images/hero-button/arrow@2x.png');
+  }
+
+  @include media(tablet) {
+    display: inline-block;
+    text-align: left;
+  }
+
+  &,
+  &:link,
+  &:visited {
+    color: $link-colour;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $white;
+  }
+
+  &:hover {
+    color: $link-hover-colour;
+  }
+
+  &:active {
+    color: $link-active-colour;
+  }
+}

@@ -1,0 +1,61 @@
+.hero {
+  background-color: $govuk-blue;
+  color: $white;
+
+  margin-bottom: $gutter-half;
+
+  @include media(tablet) {
+    margin-bottom: $gutter;
+  }
+
+  a:link,
+  a:visited {
+    font-weight: bold;
+    color: $white;
+  }
+
+  a:hover,
+  a:active {
+    color: $light-blue-25;
+  }
+
+  &__content {
+    $border-top-width: 10px;
+
+    @extend %site-width-container;
+
+    padding: ($gutter-half + $border-top-width) 0 $gutter-half;
+
+    @include media(tablet) {
+      padding: ($gutter + $border-top-width) 0 $gutter;
+    }
+  }
+
+  &__title {
+    @include core-48;
+    margin-bottom: $gutter;
+    font-weight: bold;
+  }
+
+  &__description {
+    @include core-24;
+  }
+
+  &__feedback-link {
+    @include core-16;
+    line-height: 1.25;
+    margin-top: $gutter;
+
+    @include media(tablet) {
+      margin-top: 0;
+    }
+  }
+
+  &__search {
+    margin-bottom: $gutter-half;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}

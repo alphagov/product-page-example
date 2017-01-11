@@ -5,6 +5,8 @@
 
     <title><%= current_page.data.title || "GOV.UK Product Pages" %></title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!--[if gt IE 8]><!--><%= stylesheet_link_tag :screen, media: 'screen' %><!--<![endif]-->
     <!--[if lte IE 8]><%= stylesheet_link_tag 'screen-old-ie', media: 'screen' %><![endif]-->
     <%= stylesheet_link_tag :print, media: 'print' %>
