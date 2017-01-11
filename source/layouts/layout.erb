@@ -15,6 +15,45 @@
   </head>
 
   <body>
+    <header class="header<% if current_page.url == '/' %> header--without-border<% end %>">
+      <div class="header__container">
+        <div class="header__brand">
+          <a href="/">
+            <span class="govuk-logo">
+              <img class="govuk-logo__printable-crown" src="/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36">
+              GOV.UK
+            </span>
+            <span class="header__title">
+              Product Pages
+              <span class="phase-banner">Beta</span>
+            </span>
+          </a>
+        </div>
+
+        <input class="header__navigation-toggle-checkbox" type="checkbox" id="show-menu" />
+        <label class="header__navigation-toggle" for="show-menu">
+          Menu
+        </label>
+
+        <nav id="navigation" class="header__navigation" aria-label="Top Level Navigation">
+          <ul>
+            <%
+              {
+                'Index' => '/',
+                'Supplementary Page' => '/supplementary.html',
+                'Contact' => '/contact.html'
+              }.each do |title, url|
+            %>
+              <li<% if url == current_page.url %> class="active"<% end %>>
+                <a href="<%= url %>">
+                  <%= title %>
+                </a>
+              </li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>

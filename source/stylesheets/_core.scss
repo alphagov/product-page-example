@@ -15,12 +15,16 @@
 
 @import "util/fonts";
 @import "util/grid";
+@import "util/printable";
 
 @import "modules/hero";
 @import "modules/hero-button";
 @import "modules/related-items";
 @import "modules/content-section";
 @import "modules/sub-navigation";
+@import "modules/header";
+@import "modules/govuk-logo";
+@import "modules/phase-banner";
 
 html, body {
   margin: 0;
