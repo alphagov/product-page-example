@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title><%= current_page.data.title || "GOV.UK Product Pages" %></title>
+    <title><%= current_page.data.title && "#{current_page.data.title} – " %>GOV.UK Product Pages</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

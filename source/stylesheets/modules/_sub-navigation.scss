@@ -1,0 +1,19 @@
+.sub-navigation {
+  margin-top: $gutter-half;
+
+  &__link {
+    border-bottom: 1px $grey-3 solid;
+    @include core-16;
+    display: block;
+    padding: $gutter-one-third 0;
+
+    &:link {
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
