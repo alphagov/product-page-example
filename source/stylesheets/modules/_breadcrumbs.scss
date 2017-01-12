@@ -10,19 +10,30 @@
     margin-bottom: $gutter-two-thirds;
   }
 
-  &__link {
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    margin: 0;
+    padding: 0 $gutter-one-quarter 0 (11px + $gutter-one-quarter);    
+    
     background-image: url('/images/breadcrumbs/separator.png');
     background-repeat: no-repeat;
     background-size: 6px 11px;
     background-position: left center;
-    padding: 0 $gutter-one-quarter 0 (11px + $gutter-one-quarter);
+    
     white-space: nowrap;
-    display: inline-block;
 
     @include device-pixel-ratio(2) {
       background-image: url('/images/breadcrumbs/separator@2x.png');
     }
 
+    &,
     a:link,
     a:hover,
     a:active,
@@ -30,12 +41,13 @@
       color: $black;
     }
 
-    &--active a:link,
-    &--active a:hover,
-    &--active a:active,
-    &--active a:visited {
+    &--active {
       @include bold-16;
-      text-decoration: none;
+      
+      a:link,
+      a:visited {
+        text-decoration: none;
+      }
     }
 
     &:first-child {
@@ -44,10 +56,11 @@
     }
   }
 
-  &--on-blue {
-    border-bottom: 1px #377fb9 solid;
+  &--inverse {
+    border-bottom: 1px rgba($white, 0.25) solid;
 
-    .breadcrumbs__link {
+    .breadcrumbs__item {
+      &--active,
       a:link,
       a:hover,
       a:active,

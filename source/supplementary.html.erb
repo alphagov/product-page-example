@@ -1,11 +1,20 @@
 ---
 title: Supplementary Page Example
 ---
-<ol class="breadcrumbs">
-  <li class="breadcrumbs__link"><a href="https://www.gov.uk/service-toolkit">Service Toolkit</a></li>
-  <li class="breadcrumbs__link"><a href="/">Product Pages</a></li>
-  <li class="breadcrumbs__link breadcrumbs__link--active"><a href="/supplementary.html">Supplementary Page</a></li>
-</ol>
+
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Product Page</span></a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="#main" itemprop="item"><span itemprop="name">Supplementary page</span></a>
+    </li>
+  </ol>
+</nav>
 
 <div class="container">
   <div class="grid-row">

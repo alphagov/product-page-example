@@ -3,10 +3,16 @@ title: Index Page Example
 ---
 
 <div class="masthead">
-  <ol class="breadcrumbs breadcrumbs--on-blue">
-    <li class="breadcrumbs__link"><a href="https://www.gov.uk/service-toolkit">Service Toolkit</a></li>
-    <li class="breadcrumbs__link breadcrumbs__link--active"><a href="/">Product Pages</a></li>
-  </ol>
+  <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs">
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+      <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="#main" itemprop="item"><span itemprop="name">Product Page</span></a>
+      </li>
+    </ol>
+  </nav>
 
   <div class="hero hero--breaded">
     <div class="hero__content">

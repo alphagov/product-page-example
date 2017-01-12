@@ -39,13 +39,13 @@
           <ul>
             <%
               {
-                'Index' => '/',
+                'About' => '/',
                 'Supplementary Page' => '/supplementary.html',
-                'Contact' => '/contact.html'
+                'Support' => '/support.html'
               }.each do |title, url|
             %>
               <li<% if url == current_page.url %> class="active"<% end %>>
-                <a href="<%= url %>">
+                <a href="<%= url == current_page.url ? "#main" : url %>">
                   <%= title %>
                 </a>
               </li>
