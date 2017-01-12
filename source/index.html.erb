@@ -3,10 +3,16 @@ title: Index Page Example
 ---
 
 <div class="masthead">
-  <ol class="breadcrumbs breadcrumbs--on-blue">
-    <li class="breadcrumbs__link"><a href="https://www.gov.uk/service-toolkit">Service Toolkit</a></li>
-    <li class="breadcrumbs__link breadcrumbs__link--active"><a href="/">Product Pages</a></li>
-  </ol>
+  <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs">
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+      <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
+      </li>
+      <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="#main" itemprop="item"><span itemprop="name">Product Page</span></a>
+      </li>
+    </ol>
+  </nav>
 
   <div class="hero hero--breaded">
     <div class="hero__content">
@@ -35,37 +41,37 @@ title: Index Page Example
   <div class="grid-row">
     <div class="column-two-thirds">
       <section class="content-section">
-        <h1 class="content-section__title">A section</h1>
+        <h2 class="content-section__title">A section</h2>
         <p class="content-section__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
 
       <section class="content-section content-section--with-top-border">
-        <h1 class="content-section__title">A section</h1>
+        <h2 class="content-section__title">A section</h2>
         <p class="content-section__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
 
       <section class="content-section content-section--with-top-border">
-        <h1 class="content-section__title">A section</h1>
+        <h2 class="content-section__title">A section</h2>
         <p class="content-section__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
     </div>
 
     <div class="column-one-third">
-      <div class="related-items">
-        <h1 class="related-items__title">Related content</h1>
+      <aside class="related-items">
+        <h2 class="related-items__title">Related content</h2>
         <ul class="related-items__list">
           <li><a href="#">A link</a></li>
           <li><a href="#">Another link</a></li>
           <li><a href="#">A third link</a></li>
         </ul>
-      </div>
+      </aside>
     </div>
   </div>
 
   <section class="content-section content-section--with-top-border">
     <div class="grid-row">
       <div class="column-two-thirds">
-        <h1 class="content-section__title">A full-width section</h1>
+        <h2 class="content-section__title">A full-width section</h2>
         <p class="content-section__body">This section is full-width on tablet and above.</p>
       </div>
     </div>
@@ -74,7 +80,7 @@ title: Index Page Example
   <div class="grid-row">
     <div class="column-half">
       <section class="content-section content-section--with-top-border">
-        <h1 class="content-section__title">A section with an image</h1>
+        <h2 class="content-section__title">A section with an image</h2>
         <p>On tablet screen sizes and above, this is a left-aligned section with an image to the right.</p>
       </section>
     </div>
