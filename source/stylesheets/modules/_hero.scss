@@ -25,31 +25,19 @@
   }
 
   &__title {
-    @include core-48;
-    margin-bottom: $gutter-half;
-    font-weight: bold;
-
-    @include media(tablet) {
-      margin-bottom: $gutter;
-    }
+    @include bold-48;
   }
 
   &__description {
     @include core-24;
   }
 
-  &__feedback-link {
-    @include core-16;
-    line-height: 1.25;
-    margin-top: $gutter;
-
-    @include media(tablet) {
-      margin-top: 0;
-    }
-  }
-
-  &__search {
+  &__title, &__description {
     margin-bottom: $gutter-half;
+    
+    @include media(tablet) {
+      margin-bottom: $gutter;
+    }
   }
 
   &__image {
