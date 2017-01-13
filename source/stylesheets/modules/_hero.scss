@@ -26,8 +26,12 @@
 
   &__title {
     @include core-48;
-    margin-bottom: $gutter;
+    margin-bottom: $gutter-half;
     font-weight: bold;
+
+    @include media(tablet) {
+      margin-bottom: $gutter;
+    }
   }
 
   &__description {
