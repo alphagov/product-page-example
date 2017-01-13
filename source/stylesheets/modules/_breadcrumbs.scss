@@ -3,12 +3,8 @@
   @include core-16;
 
   padding: $gutter-half 0 $gutter-one-third;
-  margin-bottom: $gutter-half;
+  margin-bottom: $gutter;
   list-style: none;
-
-  @include media(tablet) {
-    margin-bottom: $gutter-two-thirds;
-  }
 
   ol {
     margin: 0;
@@ -20,13 +16,13 @@
     display: inline-block;
 
     margin: 0;
-    padding: 0 $gutter-one-quarter 0 (11px + $gutter-one-quarter);    
-    
+    padding: 0 $gutter-one-quarter 0 (11px + $gutter-one-quarter);
+
     background-image: url('/images/breadcrumbs/separator.png');
     background-repeat: no-repeat;
     background-size: 6px 11px;
     background-position: left center;
-    
+
     white-space: nowrap;
 
     @include device-pixel-ratio(2) {
@@ -43,7 +39,7 @@
 
     &--active {
       @include bold-16;
-      
+
       a:link,
       a:visited {
         text-decoration: none;
