@@ -1,0 +1,86 @@
+---
+title: Support Page Example
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">Product Page</span></a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="#main" itemprop="item"><span itemprop="name">Support</span></a>
+    </li>
+  </ol>
+</nav>
+
+<div class="container">
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+      <h1>Get Support</h1>
+      <p>Do you have a problem or question? Please send a detailed description to our support team.</p>
+
+      <div class="panel panel-border-wide">
+        <p>
+          Check our <a href="#">system status</a> 
+          page to see if there are any known issues with this service.
+        </p>
+      </div>
+
+      <form method="post">
+        <div class="form-group">
+          <label class="form-label" for="feedback">
+              <label for="subject">Subject</label>
+          </label>
+
+          <input class="form-control form-control-1-1" data-module="" id="subject" name="subject" rows="8" type="text" value="">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="feedback">
+              <label for="feedback">Description</label>
+          </label>
+
+          <textarea class="form-control form-control-1-1" data-module="" id="feedback" name="feedback" rows="10"></textarea>
+        </div>
+            
+        <div class="form-group">
+          <label class="form-label" for="name">
+              <label for="name">Name</label>
+          </label>
+          <input class="form-control form-control-1-1" data-module="" id="name" name="name" rows="8" type="text" value="">
+        </div>
+            
+        <div class="form-group">
+          <label class="form-label" for="email_address">
+              <label for="email_address">Email address</label>
+          </label>
+
+          <input class="form-control form-control-1-1" data-module="" id="email_address" name="email_address" rows="8" type="text" value="">
+        </div>
+            
+        <input class="button" type="submit" value="Send">
+
+      </form>
+    </div>
+
+    <div class="column-one-third">
+      <aside class="related-items">
+        <h2 class="related-items__title">Other ways to get in touch with the team</h2>
+        <ul class="related-items__list">
+          <li><a href="#">A link</a></li>
+          <li><a href="#">Another link</a></li>
+          <li><a href="#">A third link which is longer and is likely to span multiple lines</a></li>
+        </ul>
+
+        <h2 class="related-items__title">Roadmap</h2>
+        <ul class="related-items__list">
+          <li><a href="#">A link</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</div>
