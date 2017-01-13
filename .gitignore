@@ -19,3 +19,6 @@
 
 # Vendored Frontend components
 /components
+
+# PaaS authentication file
+Staticfile.auth
