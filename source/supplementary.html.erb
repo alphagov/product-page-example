@@ -20,9 +20,17 @@ title: Supplementary Page Example
   <div class="grid-row">
     <div class="column-one-third">
       <nav class="sub-navigation">
-        <a href="#heading-1" class="sub-navigation__link">Heading 1</a>
-        <a href="#heading-2" class="sub-navigation__link">Heading 2</a>
-        <a href="#heading-3" class="sub-navigation__link">Heading 3</a>
+        <ol itemscope itemtype="http://schema.org/ItemList">
+          <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="#heading-1" itemprop="item"><span itemprop="name">Heading 1</span></a>
+          </li>
+          <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="#heading-2" itemprop="item"><span itemprop="name">Heading 2</span></a>
+          </li>
+          <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="#heading-3" itemprop="item"><span itemprop="name">Heading 3</span></a>
+          </li>
+        </ol>
       </nav>
     </div>
 
