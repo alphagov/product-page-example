@@ -1,0 +1,10 @@
+.grid-row--rtl {
+  .column-quarter,
+  .column-half,
+  .column-three-quarters,
+  .column-one-third,
+  .column-third,
+  .column-two-thirds {
+    float: right;
+  }
+}
