@@ -54,6 +54,10 @@ class ImportedAssetPathProcessor
   def call(sprockets_asset)
     filename = File.basename(sprockets_asset.logical_path)
     directory = case sprockets_asset.logical_path
+                # I fought the asset pipeline and the asset pipeline won:
+                # This first `when` statement handles an edge case where images are nested inside
+                # a stylesheets directory, as is the case in govuk_template.
+                when /stylesheets\/images\// then ([app.config[:images_dir]] * 2).join('/')
                 when /images\// then app.config[:images_dir]
                 when /fonts\// then app.config[:fonts_dir]
                 when /stylesheets\// then app.config[:css_dir]
@@ -71,4 +75,3 @@ activate :sprockets do |config|
 end
 
 sprockets.append_path File.join(root, "components")
-
