@@ -1,3 +1,32 @@
+/**
+ * Hero Component
+ *
+ * Notes:
+ * - If using together with a breadcrumb in a masthead, add the --breaded
+ *   modifier to reduce top padding.
+ *
+ * Example Usage:
+ *
+ * <div class="hero hero--breaded">
+ *  <div class="hero__content">
+ *    <div class="grid-row">
+ *      <div class="column-two-thirds">
+ *        <h1 class="hero__title">Verify that you've paid to send notifications to a register on a platform.</h1>
+ *        <p class="hero__description">
+ *          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ *        </p>
+ *        <a href="#" role="button" class="hero-button">
+ *          Do this thing
+ *        </a>
+ *        <span class="hero-alternative-action">
+ *          or <a href="#">do another thing</a> because reasons
+ *        </span>
+ *      </div>
+ *    </div>
+ *  </div>
+ * </div>
+ */
+
 .hero {
   color: $white;
 
