@@ -15,6 +15,8 @@
   </head>
 
   <body>
+    <a href="#content" class="skip-link">Skip to main content</a>
+
     <header class="header<% if current_page.url == '/' %> header--without-border<% end %>">
       <div class="header__container">
         <div class="header__brand">
@@ -54,8 +56,8 @@
         </nav>
       </div>
     </header>
-    
-    <main id="main">
+
+    <main id="content">
       <%= yield %>
     </main>
 
