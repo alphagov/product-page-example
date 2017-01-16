@@ -42,3 +42,33 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+# Override generated asset path to remove the long explicit vendor paths
+class ImportedAssetPathProcessor
+  attr_reader :app
+
+  def initialize(app)
+    @app = app
+  end
+
+  def call(sprockets_asset)
+    filename = File.basename(sprockets_asset.logical_path)
+    directory = case sprockets_asset.logical_path
+                when /images\// then app.config[:images_dir]
+                when /fonts\// then app.config[:fonts_dir]
+                when /stylesheets\// then app.config[:css_dir]
+                else
+                  "assets"
+                end
+
+    File.join(directory, filename)
+  end
+end
+
+activate :sprockets do |config|
+  config.expose_middleman_helpers = true
+  config.imported_asset_path = ImportedAssetPathProcessor.new(app)
+end
+
+sprockets.append_path File.join(root, "components")
+
