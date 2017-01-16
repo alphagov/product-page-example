@@ -53,7 +53,8 @@
   }
 
   &--inverse {
-    border-bottom: 1px rgba($white, 0.25) solid;
+    border-bottom: 1px $white solid;
+    border-bottom-color: rgba($white, 0.25);
 
     .breadcrumbs__item {
       &--active,
