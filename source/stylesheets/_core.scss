@@ -13,6 +13,7 @@
 
 @import "govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
 
+@import "govuk_elements/public/sass/elements/helpers";
 @import "govuk_elements/public/sass/elements/buttons";
 @import "govuk_elements/public/sass/elements/forms";
 @import "govuk_elements/public/sass/elements/layout";
@@ -24,18 +25,19 @@
 
 @import "util/printable";
 
+@import "modules/breadcrumbs";
+@import "modules/content-section";
+@import "modules/full-width-form";
+@import "modules/govuk-logo";
+@import "modules/header";
 @import "modules/hero";
 @import "modules/hero-alternative-action";
 @import "modules/hero-button";
-@import "modules/related-items";
-@import "modules/content-section";
-@import "modules/sub-navigation";
-@import "modules/header";
-@import "modules/govuk-logo";
-@import "modules/phase-banner";
-@import "modules/breadcrumbs";
 @import "modules/masthead";
+@import "modules/phase-banner";
+@import "modules/related-items";
 @import "modules/skip-link";
+@import "modules/sub-navigation";
 
 html, body {
   margin: 0;
@@ -47,6 +49,10 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgro
   margin: 0;
   padding: 0;
   vertical-align: baseline;
+}
+
+#main {
+  margin-bottom: $gutter * 3;
 }
 
 h1, h2, h3, h4, h5, h6, p {
