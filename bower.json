@@ -1,0 +1,20 @@
+{
+  "name": "product-pages-template",
+  "homepage": "https://github.com/alphagov/product-pages-template",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "govuk_template": "git://github.com/alphagov/govuk_template.git#^0.19.2",
+    "govuk_frontend_toolkit": "git://github.com/alphagov/govuk_frontend_toolkit#v5.0.2",
+    "govuk_elements": "git://github.com/alphagov/govuk_elements"
+  }
+}

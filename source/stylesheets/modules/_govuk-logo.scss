@@ -2,11 +2,11 @@
   font-weight: bold;
 
   @include screen {
-    background-image: file-url('/images/gov.uk_logotype_crown.png');
+    background-image: image-url('govuk_template/source/assets/stylesheets/images/gov.uk_logotype_crown-1x.png');
     background-repeat: no-repeat;
 
     @include device-pixel-ratio {
-      background-image: file-url('/images/gov.uk_logotype_crown-2x.png');
+      background-image: image-url('govuk_template/source/assets/stylesheets/images/gov.uk_logotype_crown.png');
       background-size: 36px 32px;
     }
 
