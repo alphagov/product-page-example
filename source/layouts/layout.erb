@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <a href="#content" class="skip-link">Skip to main content</a>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
     <header class="header<% if current_page.url == '/' %> header--without-border<% end %>">
       <div class="header__container">
@@ -60,7 +60,7 @@
       </div>
     </header>
 
-    <main id="content">
+    <main id="main">
       <%= yield %>
     </main>
 
