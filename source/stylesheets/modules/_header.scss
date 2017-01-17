@@ -9,7 +9,7 @@
  * - Link the current page to the same place as your skip link (e.g. #main) –
  *   this means that it is included by screen readers but is referred to as a
  *   'same page' link, and clicking it does not reload the page.
- * 
+ *
  * Example Usage:
  *
  * <header class="header">
@@ -19,12 +19,12 @@
  *         <span class="header__title">My Product Page</span>
  *       </a>
  *     </div>
- * 
+ *
  *     <input class="header__navigation-toggle-checkbox" type="checkbox" id="show-menu" />
  *     <label class="header__navigation-toggle" for="show-menu">
  *       Menu
  *     </label>
- * 
+ *
  *     <nav id="navigation" class="header__navigation" aria-label="Top Level Navigation">
  *       <ul>
  *         <li class="active"><a href="#main">Active Page</a></li>
@@ -110,7 +110,7 @@ $active-nav-color: #1d8feb;
     }
 
     a:focus {
-      color: $black;
+      background-color: inherit;
     }
 
     @include media(tablet) {
@@ -206,7 +206,7 @@ $active-nav-color: #1d8feb;
       padding-top: 2px;
       border-top: none;
       float: right;
-      
+
       a:link, a:visited {
         padding: 0;
       }
