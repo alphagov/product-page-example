@@ -14,7 +14,6 @@
     <!--[if IE 8]><%= stylesheet_link_tag "fonts-ie8", media: :all %><![endif]-->
     <!--[if gte IE 9]><!--><%= stylesheet_link_tag :fonts, media: :all %><!--<![endif]-->
 
-    <%= javascript_include_tag :application %>
     <!--[if lt IE 9]><%= javascript_include_tag "ie.js" %><![endif]-->
   </head>
 
@@ -36,12 +35,12 @@
           </a>
         </div>
 
-        <input class="header__navigation-toggle-checkbox" type="checkbox" id="show-menu" />
+        <input class="header__navigation-toggle-checkbox" type="checkbox" id="show-menu" aria-controls="navigation" aria-expanded="false" />
         <label class="header__navigation-toggle" for="show-menu">
           Menu
         </label>
 
-        <nav id="navigation" class="header__navigation" aria-label="Top Level Navigation">
+        <nav id="navigation" class="header__navigation" aria-label="Top Level Navigation" aria-hidden="true">
           <ul>
             <%
               {
@@ -83,5 +82,7 @@
         </div>
       </div>
     </footer>
+
+    <%= javascript_include_tag :application %>
   </body>
 </html>
