@@ -91,6 +91,14 @@ $active-nav-color: #1d8feb;
 
 .header__brand {
   font-size: 30px;
+  
+  // Give brand focus outline on mobile
+  &:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
 
   a:link, a:visited {
     text-decoration: none;
@@ -263,6 +271,10 @@ $active-nav-color: #1d8feb;
   @include media(tablet) {
     display: none;
   }
+}
+
+.header__navigation-toggle-checkbox:focus ~ .header__navigation-toggle {
+  outline: 3px solid $focus-colour;
 }
 
 .header__navigation-toggle-checkbox:checked ~ .header__navigation-toggle:after {
