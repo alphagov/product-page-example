@@ -91,6 +91,14 @@ $active-nav-color: #1d8feb;
 
 .header__brand {
   font-size: 30px;
+  
+  // Give brand focus outline on mobile
+  &:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
 
   a:link, a:visited {
     text-decoration: none;
