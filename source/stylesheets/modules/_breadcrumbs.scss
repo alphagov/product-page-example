@@ -34,7 +34,7 @@
 
   padding: $gutter-one-third 0;
   list-style: none;
-  
+
   @include media(tablet) {
     margin-bottom: $gutter;
   }
@@ -96,6 +96,10 @@
       a:active,
       a:visited {
         color: $white;
+      }
+
+      a:focus {
+        color: $black;
       }
     }
   }

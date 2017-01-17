@@ -60,6 +60,10 @@
     color: $light-blue-25;
   }
 
+  a:focus {
+    color: $black;
+  }
+
   &__title {
     @include bold-48;
   }
