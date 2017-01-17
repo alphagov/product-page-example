@@ -273,6 +273,10 @@ $active-nav-color: #1d8feb;
   }
 }
 
+.header__navigation-toggle-checkbox:focus ~ .header__navigation-toggle {
+  outline: 3px solid $focus-colour;
+}
+
 .header__navigation-toggle-checkbox:checked ~ .header__navigation-toggle:after {
   content: "\25B2";
 }
