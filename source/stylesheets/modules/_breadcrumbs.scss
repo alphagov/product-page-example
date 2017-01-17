@@ -33,8 +33,11 @@
   @include core-16;
 
   padding: $gutter-half 0 $gutter-one-third;
-  margin-bottom: $gutter;
   list-style: none;
+  
+  @include media(tablet) {
+    margin-bottom: $gutter;
+  }
 
   ol {
     margin: 0;
