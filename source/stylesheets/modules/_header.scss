@@ -154,7 +154,16 @@ $active-nav-color: #1d8feb;
 
 .header__navigation {
   @include screen {
-    @include bold-16;
+
+    // We want the same font size on mobile as tablet, so we can't use bold-16.
+    @include _core-font-generator(
+      $font-size: 16px,
+      $font-size-640: 16px,
+      $font-size-print: 12pt,
+      $line-height: (20 / 16),
+      $line-height-640: (20 / 16),
+      $font-weight: 700
+    );
 
     display: none;
     clear: both;
@@ -164,6 +173,8 @@ $active-nav-color: #1d8feb;
     a:link, a:visited {
       color: $white;
       text-decoration: none;
+      padding: 8px 0;
+      display: inline-block;
     }
 
     .active a:link, .active a:visited {
@@ -181,12 +192,12 @@ $active-nav-color: #1d8feb;
     ul {
       border-top: 1px solid $grey-1;
       margin: 0;
-      padding: 0;
+      padding: 8px 0 0;
     }
 
     li {
       list-style: none;
-      margin-top: 12px;
+      margin: 2px 0;
     }
 
     @include media(tablet) {
@@ -195,14 +206,19 @@ $active-nav-color: #1d8feb;
       padding-top: 2px;
       border-top: none;
       float: right;
+      
+      a:link, a:visited {
+        padding: 0;
+      }
 
       ul {
         border-top: none;
+        padding: 0;
       }
 
       li {
         float: left;
-        margin-left: $gutter-half;
+        margin: 12px 0 0 $gutter-half;
       }
     }
   }
