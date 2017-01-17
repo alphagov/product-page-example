@@ -30,11 +30,14 @@
 
 .breadcrumbs {
   @extend %site-width-container;
-  @include core-16;
+  @include core-16($line-height: (25 / 16), $line-height-640: 1.75);
 
-  padding: $gutter-half 0 $gutter-one-third;
-  margin-bottom: $gutter;
+  padding: $gutter-one-third 0;
   list-style: none;
+  
+  @include media(tablet) {
+    margin-bottom: $gutter;
+  }
 
   ol {
     margin: 0;

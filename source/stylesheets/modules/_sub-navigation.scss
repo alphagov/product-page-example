@@ -25,7 +25,9 @@
  */
 
 .sub-navigation {
-  margin-top: $gutter-half;
+  @include media(tablet) {
+    margin-top: $gutter-half;
+  }
 
   ol,
   ul {
