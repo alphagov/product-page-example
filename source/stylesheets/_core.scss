@@ -15,6 +15,7 @@
 
 @import "govuk_elements/public/sass/elements/helpers";
 @import "govuk_elements/public/sass/elements/buttons";
+@import "govuk_elements/public/sass/elements/elements-typography";
 @import "govuk_elements/public/sass/elements/forms";
 @import "govuk_elements/public/sass/elements/layout";
 @import "govuk_elements/public/sass/elements/lists";
@@ -47,19 +48,9 @@ html, body {
   @include core-19;
 }
 
-html, body, div, p, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
 #main {
   display: block;
   margin-bottom: $gutter * 3;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: $gutter-half 0;
 }
 
 .container {
