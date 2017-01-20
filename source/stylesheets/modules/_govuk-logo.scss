@@ -19,6 +19,7 @@
 
 .govuk-logo {
   font-weight: bold;
+  display: inline-block;
 
   @include screen {
     background-image: image-url('govuk_template/source/assets/stylesheets/images/gov.uk_logotype_crown-1x.png');
@@ -30,6 +31,7 @@
     }
 
     @include media(tablet) {
+      margin-right: 8px;
       background-position: 0 1px;
     }
   }
@@ -37,6 +39,7 @@
 
 .govuk-logo__printable-crown {
   vertical-align: middle;
+  margin-right: 1px;
 
   @include screen {
     visibility: hidden;
