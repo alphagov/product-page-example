@@ -15,11 +15,6 @@
 .content-section {
   margin-top: $gutter;
 
-  &__title {
-    @include bold-36;
-    margin-top: 0;
-  }
-
   &__image {
     max-width: 100%;
   }
@@ -27,5 +22,9 @@
   &--with-top-border {
     padding-top: $gutter;
     border-top: 1px $grey-3 solid;
+    
+    .content-section__first-heading {
+      margin-top: 0;
+    }
   }
 }

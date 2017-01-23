@@ -35,10 +35,6 @@
   padding: $gutter-one-third 0;
   list-style: none;
 
-  @include media(tablet) {
-    margin-bottom: $gutter;
-  }
-
   ol {
     margin: 0;
     padding: 0;

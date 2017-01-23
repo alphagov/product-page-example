@@ -15,7 +15,7 @@
 
 .related-items {
   border-top: 10px solid $govuk-blue;
-  margin: $gutter 0;
+  margin: ($gutter * 1.5) 0;
 
   &__title {
     @include bold-24;

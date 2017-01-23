@@ -55,7 +55,7 @@ $active-nav-color: #1d8feb;
   @extend %contain-floats;
   zoom: 1;
 
-  padding: 8px 0;
+  padding: 9px 0 6px;
 
   @include screen {
     border-bottom: 10px solid $mainstream-brand;
@@ -155,7 +155,6 @@ $active-nav-color: #1d8feb;
     display: inherit;
     float: none;
     clear: none;
-    padding-left: 5px;
   }
 
   .phase-banner {
