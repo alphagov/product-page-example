@@ -10,6 +10,10 @@ It is also a [middleman site](http://middlemanapp.com/) for the sole purpose of
 providing an _example_ of how to use the components to build a site. You do not
 have to use middleman to build your product page.
 
+This shares a number of components and design considerations with the [tech docs
+template](https://github.com/alphagov/tech-docs-template), which may also be
+useful for product teams.
+
 
 ## Components
 
