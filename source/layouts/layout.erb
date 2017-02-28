@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
 
@@ -14,7 +14,7 @@
     <!--[if IE 8]><%= stylesheet_link_tag "fonts-ie8", media: :all %><![endif]-->
     <!--[if gte IE 9]><!--><%= stylesheet_link_tag :fonts, media: :all %><!--<![endif]-->
 
-    <!--[if lt IE 9]><%= javascript_include_tag "ie.js" %><![endif]-->
+    <%= javascript_include_tag :application %>
   </head>
 
   <body>
@@ -35,28 +35,27 @@
           </a>
         </div>
 
-        <input class="header__navigation-toggle-checkbox" type="checkbox" id="show-menu" aria-controls="navigation" aria-expanded="false" />
-        <label class="header__navigation-toggle" for="show-menu">
-          Menu
-        </label>
+        <div data-module="navigation">
+          <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation">Menu</button>
 
-        <nav id="navigation" class="header__navigation" aria-label="Top Level Navigation" aria-hidden="true">
-          <ul>
-            <%
-              {
-                'About' => '/',
-                'Supplementary Pages' => '/supplementary.html',
-                'Support' => '/support.html'
-              }.each do |title, url|
-            %>
-              <li<% if url == current_page.url %> class="active"<% end %>>
-                <a href="<%= url == current_page.url ? "#main" : url %>">
-                  <%= title %>
-                </a>
-              </li>
-            <% end %>
-          </ul>
-        </nav>
+          <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true">
+            <ul>
+              <%
+                {
+                  'About' => '/',
+                  'Supplementary Pages' => '/supplementary.html',
+                  'Support' => '/support.html'
+                }.each do |title, url|
+              %>
+                <li<% if url == current_page.url %> class="active"<% end %>>
+                  <a href="<%= url == current_page.url ? "#main" : url %>">
+                    <%= title %>
+                  </a>
+                </li>
+              <% end %>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -82,7 +81,5 @@
         </div>
       </div>
     </footer>
-
-    <%= javascript_include_tag :application %>
   </body>
 </html>
