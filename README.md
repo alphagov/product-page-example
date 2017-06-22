@@ -2,7 +2,7 @@
 
 This repository contains a number of [components](#components) that can be used
 to build 'product pages' for GOV.UK Products like [GOV.UK Pay] or [GOV.UK
-Verify].
+Notify].
 
 ![Screenshot of the example product page](screenshot.png)
 
@@ -65,7 +65,7 @@ following commands from the root of this project:
 
 
 [GOV.UK Pay]: https://www.payments.service.gov.uk/
-[GOV.UK Verify]: https://www.notifications.service.gov.uk/
+[GOV.UK Notify]: https://www.notifications.service.gov.uk/
 
 [GOV.UK Elements]: https://github.com/alphagov/govuk_elements
 [GOV.UK Frontend Toolkit]: https://github.com/alphagov/govuk_frontend_toolkit
