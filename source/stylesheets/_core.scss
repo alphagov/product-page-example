@@ -13,13 +13,13 @@
 
 @import "govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
 
-@import "govuk_elements/public/sass/elements/helpers";
-@import "govuk_elements/public/sass/elements/buttons";
-@import "govuk_elements/public/sass/elements/elements-typography";
-@import "govuk_elements/public/sass/elements/forms";
-@import "govuk_elements/public/sass/elements/layout";
-@import "govuk_elements/public/sass/elements/lists";
-@import "govuk_elements/public/sass/elements/panels";
+@import "govuk_elements/packages/govuk-elements-sass/public/sass/elements/helpers";
+@import "govuk_elements/packages/govuk-elements-sass/public/sass/elements/buttons";
+@import "govuk_elements/packages/govuk-elements-sass/public/sass/elements/elements-typography";
+@import "govuk_elements/packages/govuk-elements-sass/public/sass/elements/forms";
+@import "govuk_elements/packages/govuk-elements-sass/public/sass/elements/layout";
+@import "govuk_elements/packages/govuk-elements-sass/public/sass/elements/lists";
+@import "govuk_elements/packages/govuk-elements-sass/public/sass/elements/panels";
 
 @import "govuk_template/source/assets/stylesheets/styleguide/colours";
 @import "govuk_template/source/assets/stylesheets/accessibility";
@@ -42,7 +42,8 @@
 @import "modules/skip-link";
 @import "modules/sub-navigation";
 
-html, body {
+html,
+body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   @include core-19;
