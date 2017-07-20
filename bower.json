@@ -15,6 +15,6 @@
   "dependencies": {
     "govuk_template": "git://github.com/alphagov/govuk_template.git#^0.19.2",
     "govuk_frontend_toolkit": "git://github.com/alphagov/govuk_frontend_toolkit#v5.0.2",
-    "govuk_elements": "git://github.com/alphagov/govuk_elements"
+    "govuk_elements": "git://github.com/alphagov/govuk_elements#3.0.2"
   }
 }
