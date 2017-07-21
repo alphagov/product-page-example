@@ -17,5 +17,11 @@
     "govuk-elements-sass": "^3.1.1",
     "govuk_frontend_toolkit": "^7.0.1",
     "govuk_template_jinja": "^0.22.3"
+  },
+  "devDependencies": {
+    "napa": "^3.0.0"
+  },
+  "scripts": {
+    "install": "napa alphagov/govuk_template"
   }
 }
