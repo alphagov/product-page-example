@@ -22,6 +22,9 @@
     "napa": "^3.0.0"
   },
   "scripts": {
-    "install": "napa alphagov/govuk_template"
+    "install": "napa"
+  },
+  "napa": {
+    "govuk_template": "alphagov/govuk_template#v0.22.3"
   }
 }
