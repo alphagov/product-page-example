@@ -21,7 +21,7 @@ a.hero-button {
   @include bold-24;
   @include box-shadow(0 2px 0 darken($govuk-blue, 10%));
 
-  background-image: file-url('/images/hero-button/arrow.png');
+  background-image: file-url('images/hero-button/arrow.png');
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 95% 50%;
@@ -33,7 +33,7 @@ a.hero-button {
   text-align: center;
 
   @include device-pixel-ratio(2) {
-    background-image: file-url('/images/hero-button/arrow@2x.png');
+    background-image: file-url('images/hero-button/arrow@2x.png');
   }
 
   @include media(tablet) {
