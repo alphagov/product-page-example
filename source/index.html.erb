@@ -3,7 +3,7 @@ title: Index Page Example
 ---
 
 <div class="masthead">
-  <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs">
+  <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs" data-click-events data-click-category="Header" data-click-action="Breadcrumb clicked">
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
       <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
         <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
@@ -24,11 +24,11 @@ title: Index Page Example
         <p class="hero__description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <a href="#" role="button" class="hero-button">
+        <a href="#" role="button" class="hero-button" data-click-events data-click-category="Hero" data-click-action="Button clicked">
           Do this thing
         </a>
         <span class="hero-alternative-action">
-          or <a href="#">do another thing</a> because reasons
+          or <a href="#" data-click-events data-click-category="Hero" data-click-action="Internal link clicked">do another thing</a> because reasons
         </span>
         <p>Pellentesque commodo arcu in sollicitudin lacinia. Vivamus lacus nibh, maximus nec laoreet eget, condimentum vel mi.</p>
       </div>
