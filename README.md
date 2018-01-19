@@ -47,11 +47,18 @@ MVP, but it's something we're looking at for the future.
 
 ## Frontend Dependencies
 
-[GOV.UK Elements], [GOV.UK Frontend Toolkit] and [GOV.UK Template] are vendored
-using Bower into `/components`. If you are not using middleman, it is strongly
-recommended that you do not do this – there are *much* better ways to install
-these dependencies, which can be found in their respective READMEs.
+[GOV.UK Elements], [GOV.UK Frontend Toolkit], [GOV.UK Template] and [GaaP Analytics]
+are included using [NPM] and bundled in on build. You can include more [NPM]
+modules easily by installing them as a dependency and including paths to them.
+This works because within [config.rb](https://github.com/alphagov/product-page-example/blob/master/config.rb#L77) sprockets is instructed to look within
+`node_modules/`.
 
+### Getting started with Google Analytics
+To get started with Google Analytics you will need an account and a tracking ID
+you can get these by talking to the GaaP programme team. The analytics ID is then
+set within [config.rb](https://github.com/alphagov/product-page-example/blob/master/config.rb#L34).
+
+To learn about how to get started with event tracking head over to [GaaP Analytics].
 
 ## Running Example Locally
 
@@ -70,3 +77,5 @@ following commands from the root of this project:
 [GOV.UK Elements]: https://github.com/alphagov/govuk_elements
 [GOV.UK Frontend Toolkit]: https://github.com/alphagov/govuk_frontend_toolkit
 [GOV.UK Template]: https://github.com/alphagov/govuk_template
+[GaaP Analytics]: https://github.com/alphagov/gaap-analytics
+[NPM]: https://npmjs.com
