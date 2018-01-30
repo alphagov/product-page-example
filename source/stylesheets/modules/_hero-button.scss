@@ -1,17 +1,15 @@
-/**
- * Hero Button Component
- *
- * Notes:
- * - Ensure you include shim-links-with-button-role.js from GOV.UK Frontend
- *   Toolkit to ensure that the link acts like a button (i.e. the space bar
- *   should trigger it).
- *
- * Example Usage:
- *
- * <a href="#" role="button" class="hero-button">
- *   Do this thing
- * </a>
- */
+// Hero Button Component
+//
+// Notes:
+// - Ensure you include shim-links-with-button-role.js from GOV.UK Frontend
+//   Toolkit to ensure that the link acts like a button (i.e. the space bar
+//   should trigger it).
+//
+// Example Usage:
+//
+// <a href="#" role="button" class="hero-button">
+//   Do this thing
+// </a>
 
 $hero-button-arrow-width: 26px;
 $hero-button-arrow-height: 30px;

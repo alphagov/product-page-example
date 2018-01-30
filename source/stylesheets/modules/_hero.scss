@@ -1,38 +1,36 @@
-/**
- * Hero Component
- *
- * Notes:
- * - If using together with a breadcrumb in a masthead, add the --breaded
- *   modifier to reduce top padding.
- * - There are two images included – one is shown on mobile (hero__inline-image),
- *   and the other on tablet and above. Both are optional.
- *
- * Example Usage:
- *
- *  <div class="hero hero--breaded">
- *    <div class="hero__content">
- *      <div class="hero__body">
- *        <h1 class="hero__title">Duis aute irure dolor in reprehenderit</h1>
- *        <div class="hero__inline-image">
- *          <img src="//placehold.it/646x492/005ea5/ffffff?text=A+supporting+image" alt="" role="presentation">
- *        </div>
- *        <p class="hero__description">
- *          Lorem ipsum dolor sit amet, consectetur adipisicing elit
- *        </p>
- *        <a href="#" role="button" class="hero-button">
- *          Do this thing
- *        </a>
- *        <span class="hero-alternative-action">
- *          or <a href="#">do another thing</a> because reasons
- *        </span>
- *        <p>Pellentesque commodo arcu in sollicitudin lacinia. Vivamus lacus nibh, maximus nec laoreet eget, condimentum vel mi.</p>
- *      </div>
- *      <div class="hero__aside-image">
- *        <img src="//placehold.it/646x492/005ea5/ffffff?text=A+supporting+image" alt="" role="presentation">
- *      </div>
- *    </div>
- *  </div>
- */
+// Hero Component
+//
+// Notes:
+// - If using together with a breadcrumb in a masthead, add the --breaded
+//   modifier to reduce top padding.
+// - There are two images included – one is shown on mobile (hero__inline-image),
+//   and the other on tablet and above. Both are optional.
+//
+// Example Usage:
+//
+//  <div class="hero hero--breaded">
+//    <div class="hero__content">
+//      <div class="hero__body">
+//        <h1 class="hero__title">Duis aute irure dolor in reprehenderit</h1>
+//        <div class="hero__inline-image">
+//          <img src="//placehold.it/646x492/005ea5/ffffff?text=A+supporting+image" alt="" role="presentation">
+//        </div>
+//        <p class="hero__description">
+//          Lorem ipsum dolor sit amet, consectetur adipisicing elit
+//        </p>
+//        <a href="#" role="button" class="hero-button">
+//          Do this thing
+//        </a>
+//        <span class="hero-alternative-action">
+//          or <a href="#">do another thing</a> because reasons
+//        </span>
+//        <p>Pellentesque commodo arcu in sollicitudin lacinia. Vivamus lacus nibh, maximus nec laoreet eget, condimentum vel mi.</p>
+//      </div>
+//      <div class="hero__aside-image">
+//        <img src="//placehold.it/646x492/005ea5/ffffff?text=A+supporting+image" alt="" role="presentation">
+//      </div>
+//    </div>
+//  </div>
 
 .hero {
   @extend %site-width-container;

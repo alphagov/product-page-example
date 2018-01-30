@@ -1,15 +1,13 @@
-/**
- * Skip Link Component
- *
- * Notes:
- *
- * - Should be the first element in your <body>
- * - Ensure the target (e.g. #main) exists within your pages.
- *
- * Example Usage:
- *
- * <a href="#main" class="skip-link">Skip to main content</a>
- */
+// Skip Link Component
+//
+// Notes:
+//
+// - Should be the first element in your <body>
+// - Ensure the target (e.g. #main) exists within your pages.
+//
+// Example Usage:
+//
+// <a href="#main" class="skip-link">Skip to main content</a>
 
 .skip-link {
   display: block;
@@ -23,7 +21,7 @@
     color: $black;
     text-decoration: none;
     padding: 5px $gutter-half;
-    
+
     @include media(tablet) {
       padding: 5px $gutter;
     }

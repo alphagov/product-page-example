@@ -42,16 +42,19 @@
 @import "modules/skip-link";
 @import "modules/sub-navigation";
 
-html, body {
+html,
+body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   @include core-19;
 }
 
+// scss-lint:disable IdSelector
 #main {
   display: block;
   margin-bottom: $gutter * 3;
 }
+// scss-lint:enable IdSelector
 
 .container {
   @extend %site-width-container;
