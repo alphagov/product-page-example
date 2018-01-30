@@ -15,6 +15,21 @@
     <!--[if gte IE 9]><!--><%= stylesheet_link_tag :fonts, media: :all %><!--<![endif]-->
 
     <%= javascript_include_tag :application %>
+    <% if config.analytics.present? %>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', <%= config.analytics %>, 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('set', 'displayFeaturesTask', null);
+      ga('set', 'transport', 'beacon');
+
+      ga('send', 'pageview');
+    </script>
+    <% end %>
   </head>
 
   <body>
@@ -23,7 +38,7 @@
     <header class="header<% if current_page.url == '/' %> header--without-border<% end %>">
       <div class="header__container">
         <div class="header__brand">
-          <a href="/">
+          <a href="/" data-click-events data-click-category="Header" data-click-action="Logo link clicked">
             <span class="govuk-logo">
               <img class="govuk-logo__printable-crown" src="/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36">
               GOV.UK
@@ -38,7 +53,7 @@
         <div data-module="navigation">
           <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation">Menu</button>
 
-          <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true">
+          <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true" data-click-events data-click-category="Header" data-click-action="Navigation link clicked">
             <ul>
               <%
                 {
