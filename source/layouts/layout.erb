@@ -47,7 +47,7 @@
                   'Support' => '/support.html'
                 }.each do |title, url|
               %>
-                <li<% if url == current_page.url %> class="active"<% end %>>
+                <li<% if url == current_page.url %> class="active" "aria-current"="page"<% end %>>
                   <a href="<%= url == current_page.url ? "#main" : url %>">
                     <%= title %>
                   </a>
