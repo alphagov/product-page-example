@@ -66,6 +66,7 @@ following commands from the root of this project:
 
 [GOV.UK Pay]: https://www.payments.service.gov.uk/
 [GOV.UK Notify]: https://www.notifications.service.gov.uk/
+[GOV.UK Registers]: https://registers.cloudapps.digital/
 
 [GOV.UK Elements]: https://github.com/alphagov/govuk_elements
 [GOV.UK Frontend Toolkit]: https://github.com/alphagov/govuk_frontend_toolkit
