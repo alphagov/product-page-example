@@ -1,8 +1,8 @@
 # Product Page Example
 
 This repository contains a number of [components](#components) that can be used
-to build 'product pages' for GOV.UK Products like [GOV.UK Pay] or [GOV.UK
-Notify].
+to build 'product pages' for GOV.UK Products like [GOV.UK Pay], [GOV.UK
+Notify] and [GOV.UK Registers].
 
 ![Screenshot of the example product page](screenshot.png)
 
