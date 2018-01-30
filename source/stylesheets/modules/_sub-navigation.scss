@@ -1,28 +1,26 @@
-/**
- * Sub Navigation Component
- *
- * Notes:
- *
- * - You may wish to add a suitable aria-label to differentiate between other
- *   navigation landmarks on the page.
- * - You can test the structured data using Google's structured data testing
- *   tool: https://search.google.com/structured-data/testing-tool
- * - You can use either an ordered or unordered list depending on what makes
- *   sense for your page or collection of pages.
- *
- * Example Usage:
- *
- * <nav class="sub-navigation">
- *   <ol itemscope itemtype="http://schema.org/ItemList">
- *     <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
- *       <a href="page-one.html" itemprop="item"><span itemprop="name">Another page one</span></a>
- *     </li>
- *     <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
- *       <a href="page-two.html" itemprop="item"><span itemprop="name">Another page two</span></a>
- *     </li>
- *   </ol>
- * </nav>
- */
+// Sub Navigation Component
+//
+// Notes:
+//
+// - You may wish to add a suitable aria-label to differentiate between other
+//   navigation landmarks on the page.
+// - You can test the structured data using Google's structured data testing
+//   tool: https://search.google.com/structured-data/testing-tool
+// - You can use either an ordered or unordered list depending on what makes
+//   sense for your page or collection of pages.
+//
+// Example Usage:
+//
+// <nav class="sub-navigation">
+//   <ol itemscope itemtype="http://schema.org/ItemList">
+//     <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+//       <a href="page-one.html" itemprop="item"><span itemprop="name">Another page one</span></a>
+//     </li>
+//     <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+//       <a href="page-two.html" itemprop="item"><span itemprop="name">Another page two</span></a>
+//     </li>
+//   </ol>
+// </nav>
 
 .sub-navigation {
   @include media(tablet) {
@@ -55,8 +53,9 @@
 
   &__item--active {
     @include bold-16;
-    
-    a:link, a:visited {
+
+    a:link,
+    a:visited {
       color: $text-colour;
     }
   }
