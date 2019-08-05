@@ -102,3 +102,5 @@ end
 sprockets.append_path File.join(root, "node_modules/govuk-frontend/")
 sprockets.append_path File.join(root, "node_modules/gaap-analytics/")
 
+# https://middlemanapp.com/advanced/pretty-urls/
+activate :directory_indexes
