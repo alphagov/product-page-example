@@ -51,7 +51,12 @@ configure :build do
   activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  # Hash assets on build
+  activate :asset_hash
+end
+
 # The following lines copies files from one place to another
 # Because govuk-frontent fonts and images are with node_modules so they aren’t _seen_ by sprockets
 fonts_dir = Dir[File.join(root, "node_modules/govuk-frontend/govuk/assets/fonts/*")]
