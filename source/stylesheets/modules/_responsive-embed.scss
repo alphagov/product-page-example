@@ -1,20 +1,24 @@
-// Responsive Embed Component
-//
-// Notes:
-//
-// - Ensure you use either responsive-embed--16by9 or responsive-embed--4by3
-//   depending on the aspect ratio of your embed.
-// - Credit: Nicolas Gallagher and SUIT CSS.
-//
-// Example Usage:
-//
-// <div class="responsive-embed responsive-embed--4by3 responsive-embed--bordered">
-//   <div class="responsive-embed__wrapper">
-//     <iframe width="560" height="315" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" frameborder="0" allowfullscreen=""></iframe>
-//   </div>
-// </div>
+/**
+ * Responsive Embed Component
+ *
+ * Notes:
+ *
+ * - Ensure you use either responsive-embed--16by9 or responsive-embed--4by3
+ *   depending on the aspect ratio of your embed.
+ * - Credit: Nicolas Gallagher and SUIT CSS.
+ *
+ * Example Usage:
+ *
+ * <div class="responsive-embed responsive-embed--4by3 responsive-embed--bordered">
+ *   <div class="responsive-embed__wrapper">
+ *     <iframe width="560" height="315" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" frameborder="0" allowfullscreen=""></iframe>
+ *   </div>
+ * </div>
+ */
 
 .responsive-embed {
+  margin-bottom: govuk-spacing(6);
+
   .responsive-embed__wrapper {
     position: relative;
     display: block;
@@ -40,7 +44,7 @@
 
 .responsive-embed--bordered {
   padding: 5px;
-  outline: 1px solid $border-colour;
+  outline: 1px solid $govuk-border-colour;
 }
 
 // Modifier class for 16:9 aspect ratio

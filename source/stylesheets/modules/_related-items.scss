@@ -12,22 +12,22 @@
 // </aside>
 
 .related-items {
-  border-top: 10px solid $govuk-blue;
-  margin: ($gutter * 1.5) 0;
+  border-top: 10px solid $govuk-brand-colour;;
+  margin: govuk-spacing(4) 0;
 
   &__title {
-    @include bold-24;
-    margin-bottom: $gutter-one-third;
+    @include govuk-font($size: 24, $weight: bold);
+    margin-bottom: govuk-spacing(2);
   }
 
   &__list {
-    @include core-16;
+    @include govuk-font($size: 16);
     list-style: none;
     padding-left: 0;
-    margin: 0 0 $gutter-half;
+    margin: 0 0 govuk-spacing(3);
 
     li {
-      margin-bottom: $gutter-one-third;
+      margin-bottom: govuk-spacing(2);
     }
   }
 }
