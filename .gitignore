@@ -22,3 +22,7 @@
 
 # PaaS authentication file
 Staticfile.auth
+
+# Ignore copied assets from govuk-frontend
+/source/assets/fonts
+/source/assets/images
