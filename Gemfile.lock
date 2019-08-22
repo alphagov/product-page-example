@@ -102,7 +102,7 @@ GEM
       ffi (~> 1.9)
       rake
     servolux (0.13.0)
-    sprockets (3.7.2)
+    sprockets (4.0.0.beta10)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     temple (0.8.1)
@@ -122,8 +122,10 @@ DEPENDENCIES
   middleman-livereload
   middleman-sprockets
   sass
+  sassc
+  sprockets (= 4.0.0.beta10)
   tzinfo-data
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.16.2
+   1.17.3
