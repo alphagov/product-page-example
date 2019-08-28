@@ -16,6 +16,9 @@
 // </span>
 
 .hero-alternative-action {
-  @include core-19;
+  @include govuk-font($size: 19);
   white-space: nowrap;
+  margin-left: govuk-spacing(3);
+  position: relative;
+  top: govuk-spacing(2)
 }

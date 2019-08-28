@@ -38,7 +38,6 @@ end
 ###
 # Helpers
 ###
-
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -52,38 +51,18 @@ configure :build do
   # activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
-end
+  activate :minify_javascript
 
-# Override generated asset path to remove the long explicit vendor paths
-class ImportedAssetPathProcessor
-  attr_reader :app
-
-  def initialize(app)
-    @app = app
-  end
-
-  def call(sprockets_asset)
-    filename = File.basename(sprockets_asset.logical_path)
-    directory = case sprockets_asset.logical_path
-                # I fought the asset pipeline and the asset pipeline won:
-                # This first `when` statement handles an edge case where images are nested inside
-                # a stylesheets directory, as is the case in govuk_template.
-                when /stylesheets\/images\// then ([app.config[:images_dir]] * 2).join('/')
-                when /images\// then app.config[:images_dir]
-                when /fonts\// then app.config[:fonts_dir]
-                when /stylesheets\// then app.config[:css_dir]
-                else
-                  "assets"
-                end
-
-    File.join(directory, filename)
-  end
+  # Hash assets on build
+  activate :asset_hash
 end
 
 activate :sprockets do |config|
   config.expose_middleman_helpers = true
-  config.imported_asset_path = ImportedAssetPathProcessor.new(app)
 end
 
-sprockets.append_path File.join(root, "node_modules")
+sprockets.append_path File.join(root, 'node_modules/govuk-frontend/')
+sprockets.append_path File.join(root, 'node_modules/gaap-analytics/')
+
+# https://middlemanapp.com/advanced/pretty-urls/
+activate :directory_indexes

@@ -3,18 +3,17 @@ title: Index Page Example
 ---
 
 <div class="masthead">
-  <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs" data-click-events data-click-category="Header" data-click-action="Breadcrumb clicked">
-    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-      <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
-      </li>
-      <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="#main" itemprop="item"><span itemprop="name">Product Page</span></a>
-      </li>
-    </ol>
-  </nav>
-
   <div class="hero hero--breaded">
+    <div class="govuk-breadcrumbs breadcrumbs-hero" data-click-events data-click-category="Header" data-click-action="Breadcrumb clicked">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/service-toolkit#components">Components</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#main">Product Page</a>
+        </li>
+      </ol>
+    </div>
     <div class="hero__content">
       <div class="hero__body">
         <h1 class="hero__title">Duis aute irure dolor in reprehenderit</h1>
@@ -24,13 +23,16 @@ title: Index Page Example
         <p class="hero__description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <a href="#" role="button" class="hero-button" data-click-events data-click-category="Hero" data-click-action="Button clicked">
+        <a href="#" role="button" draggable="false" class="govuk-button govuk-button--start app-button--inverted" data-module="govuk-button" data-click-events data-click-category="Hero" data-click-action="Button clicked">
           Do this thing
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+          </svg>
         </a>
         <span class="hero-alternative-action">
-          or <a href="#" data-click-events data-click-category="Hero" data-click-action="Internal link clicked">do another thing</a> because reasons
+          or <a class="govuk-link" href="#" data-click-events data-click-category="Hero" data-click-action="Internal link clicked">do another thing</a> because reasons
         </span>
-        <p>Pellentesque commodo arcu in sollicitudin lacinia. Vivamus lacus nibh, maximus nec laoreet eget, condimentum vel mi.</p>
+        <p class="hero__paragraph">Pellentesque commodo arcu in sollicitudin lacinia. Vivamus lacus nibh, maximus nec laoreet eget, condimentum vel mi.</p>
       </div>
       <div class="hero__aside-image">
         <img src="//placehold.it/646x492/005ea5/ffffff?text=A+supporting+image" alt="" role="presentation">
@@ -39,108 +41,110 @@ title: Index Page Example
   </div>
 </div>
 
-<div class="container">
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <section class="content-section">
-        <h2 class="heading-large content-section__first-heading">A section</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
+<main class="govuk-main-wrapper" id="main-content" role="main">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row product-page-!-border-bottom govuk-!-margin-bottom-7">
+      <div class="govuk-grid-column-two-thirds">
+        <section class="content-section">
+          <h2 class="govuk-heading-l content-section__first-heading">A section</h2>
+          <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
 
-      <section class="content-section content-section--with-top-border">
-        <h2 class="heading-large content-section__first-heading">Another section</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
+        <section class="content-section content-section--with-top-border">
+          <h2 class="govuk-heading-l content-section__first-heading">Another section</h2>
+          <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
 
-      <section class="content-section content-section--with-top-border">
-        <h2 class="heading-large content-section__first-heading">A third section</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-    </div>
-
-    <div class="column-one-third">
-      <aside class="related-items">
-        <h2 class="related-items__title">Related content</h2>
-        <ul class="related-items__list">
-          <li><a href="#">A link</a></li>
-          <li><a href="#">Another link</a></li>
-          <li><a href="#">A third link</a></li>
-        </ul>
-      </aside>
-    </div>
-  </div>
-
-  <section class="content-section content-section--with-top-border">
-    <div class="grid-row">
-      <div class="column-two-thirds">
-        <h2 class="heading-large content-section__first-heading">A full-width section</h2>
-        <p class="content-section__body">This section is full-width on tablet and above.</p>
-
-        <h3 class="heading-medium content-section__first-heading">A heading</h3>
-        <p class="content-section__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section content-section--with-top-border">
-    <h2 class="heading-large content-section__first-heading">Lists in two columns</h2>
-    <div class="grid-row">
-      <div class="column-one-half">
-        <p>Here's a list of things:</p>
-        <ul class="list list-bullet">
-          <li>inceptos justo elit porta</li>
-          <li>elit porta mattis cras</li>
-          <li>malesuada ultricies amet</li>
-          <li>fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</li>
-          <li>lorem tellus mattis</li>
-          <li>maecenas faucibus mollis interdum</li>
-        </ul>
-
-        <p>This is a list of other things:</p>
-        <ul class="list list-bullet">
-          <li>ornare ultricies pellentesque</li>
-          <li>donec sed odio dui</li>
-          <li>cras justo odio, dapibus ac facilisis in, egestas eget quam</li>
-        </ul>
+        <section class="content-section content-section--with-top-border">
+          <h2 class="govuk-heading-l content-section__first-heading">A third section</h2>
+          <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
       </div>
 
-      <div class="column-one-half">
-        <p>Finally, another list on the other side:</p>
-
-        <ul class="list list-bullet">
-          <li>commodo sem vestibulum risus</li>
-          <li>fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</li>
-          <li>mollis parturient fermentum vestibulum condimentum</li>
-          <li>maecenas faucibus mollis interdum</li>
-        </ul>
-       </div>
+      <div class="govuk-grid-column-one-third">
+        <aside class="related-items">
+          <h2 class="related-items__title">Related content</h2>
+          <ul class="related-items__list">
+            <li><a class="govuk-link" href="#">A link</a></li>
+            <li><a class="govuk-link" href="#">Another link</a></li>
+            <li><a class="govuk-link" href="#">A third link</a></li>
+          </ul>
+        </aside>
+      </div>
     </div>
-  </section>
 
-  <div class="grid-row">
-    <div class="column-half">
-      <section class="content-section content-section--with-top-border">
-        <h2 class="heading-large content-section__first-heading">A section with an image</h2>
-        <p>On tablet screen sizes and above, this is a left-aligned section with an image to the right.</p>
-      </section>
-    </div>
-    <div class="column-half">
-      <section class="content-section">
-        <img src="//placehold.it/1000x600" class="content-section__image">
-      </section>
-    </div>
-  </div>
+    <section class="content-section content-section--with-top-border">
+      <div class="govuk-grid-row product-page-!-border-bottom govuk-!-margin-bottom-7">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-l content-section__first-heading">A full-width section</h2>
+          <p class="govuk-body">This section is full-width on tablet and above.</p>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <section class="content-section content-section--with-top-border">
-        <h2 class="heading-large content-section__first-heading">A section with a video</h2>
-        <div class="responsive-embed responsive-embed--16by9 responsive-embed--bordered">
-          <div class="responsive-embed__wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vtu7eKc6QpY" frameborder="0" allowfullscreen=""></iframe>
-          </div>
+          <h3 class="govuk-heading-m content-section__first-heading">A heading</h3>
+          <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section class="content-section content-section--with-top-border">
+      <h2 class="govuk-heading-l content-section__first-heading">Lists in two columns</h2>
+      <div class="govuk-grid-row product-page-!-border-bottom govuk-!-margin-bottom-7">
+        <div class="govuk-grid-column-one-half">
+          <p class="govuk-body">Here's a list of things:</p>
+          <ul class="govuk-list govuk-list-bullet">
+            <li>inceptos justo elit porta</li>
+            <li>elit porta mattis cras</li>
+            <li>malesuada ultricies amet</li>
+            <li>fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</li>
+            <li>lorem tellus mattis</li>
+            <li>maecenas faucibus mollis interdum</li>
+          </ul>
+
+          <p class="govuk-body">This is a list of other things:</p>
+          <ul class="govuk-list govuk-list-bullet">
+            <li>ornare ultricies pellentesque</li>
+            <li>donec sed odio dui</li>
+            <li>cras justo odio, dapibus ac facilisis in, egestas eget quam</li>
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-half">
+          <p class="govuk-body">Finally, another list on the other side:</p>
+
+          <ul class="govuk-list govuk-list-bullet">
+            <li>commodo sem vestibulum risus</li>
+            <li>fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</li>
+            <li>mollis parturient fermentum vestibulum condimentum</li>
+            <li>maecenas faucibus mollis interdum</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="govuk-grid-row product-page-!-border-bottom govuk-!-margin-bottom-7">
+      <div class="govuk-grid-column-one-half">
+        <section class="content-section content-section--with-top-border">
+          <h2 class="govuk-heading-l content-section__first-heading">A section with an image</h2>
+          <p class="govuk-body">On tablet screen sizes and above, this is a left-aligned section with an image to the right.</p>
+        </section>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <section class="content-section">
+          <img src="//placehold.it/1000x600" class="image govuk-!-display-block govuk-!-margin-bottom-4">
+        </section>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-7">
+      <div class="govuk-grid-column-two-thirds">
+        <section class="content-section content-section--with-top-border">
+          <h2 class="govuk-heading-l content-section__first-heading">A section with a video</h2>
+          <div class="responsive-embed responsive-embed--16by9 responsive-embed--bordered">
+            <div class="responsive-embed__wrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Vtu7eKc6QpY" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
-</div>
+</main>

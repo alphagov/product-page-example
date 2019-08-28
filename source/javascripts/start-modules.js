@@ -1,7 +1,6 @@
-//= require govuk/modules
-//= require modules/navigation
+//= require govuk/all.js
 
-$(document).ready(function() {
-  GOVUK.modules.start();
+document.addEventListener('DOMContentLoaded', function () {
+  window.GOVUKFrontend.initAll()
   window.GAAP.analytics.init()
 });

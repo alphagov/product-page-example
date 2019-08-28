@@ -2,42 +2,45 @@
 title: Supplementary Page Example
 ---
 
-<nav class="breadcrumbs" aria-label="Breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
-    </li>
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/" itemprop="item"><span itemprop="name">Product Page</span></a>
-    </li>
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/supplementary.html" itemprop="item"><span itemprop="name">Supplementary pages</span></a>
-    </li>
-    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#main" itemprop="item"><span itemprop="name">Another page one</span></a>
-    </li>
-  </ol>
-</nav>
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/service-toolkit#components">Components</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">Product Page</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/supplementary">Supplementary pages</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        <a class="govuk-breadcrumbs__link" href="#main-content">Another page one</a>
+      </li>
+    </ol>
+  </div>
+</div>
 
-<div class="container">
-  <div class="grid-row">
-    <div class="column-one-third">
-      <nav class="sub-navigation">
-        <ol itemscope itemtype="http://schema.org/ItemList">
-          <li class="sub-navigation__item sub-navigation__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="#main" itemprop="item"><span itemprop="name">Another page one</span></a>
-          </li>
-          <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="page-two.html" itemprop="item"><span itemprop="name">Another page two</span></a>
-          </li>
-        </ol>
-      </nav>
+<main class="govuk-main-wrapper" id="main-content" role="main">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <nav class="sub-navigation">
+          <ol itemscope itemtype="http://schema.org/ItemList">
+            <li class="sub-navigation__item sub-navigation__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a class="govuk-link" href="supplementary/page-one" itemprop="item"><span itemprop="name">Another page one</span></a>
+            </li>
+            <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a class="govuk-link" href="/supplementary/page-two" itemprop="item"><span itemprop="name">Another page two</span></a>
+            </li>
+          </ol>
+        </nav>
     </div>
 
-    <div class="column-two-thirds">
-      <h1 class="heading-large">Another page one</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Another page one</h1>
+      <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
 </div>
