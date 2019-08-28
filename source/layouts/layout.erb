@@ -53,7 +53,7 @@
                 }.each do |title, url|
               %>
                 <li class="govuk-header__navigation-item<% if url == current_page.url %> govuk-header__navigation-item--active" aria-current="page<% end %>">
-                  <a class="govuk-header__link" href="<%= url == current_page.url ? "#main" : url %>">
+                  <a class="govuk-header__link" href="<%= url == current_page.url ? "#main-content" : url %>">
                     <%= title %>
                   </a>
                 </li>
