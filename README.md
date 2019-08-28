@@ -47,10 +47,9 @@ MVP, but it's something we're looking at for the future.
 
 ## Frontend Dependencies
 
-[GOV.UK Elements], [GOV.UK Frontend Toolkit], [GOV.UK Template] and [GaaP Analytics]
-are included using [NPM] and bundled in on build. You can include more [NPM]
-modules easily by installing them as a dependency and including paths to them.
-This works because within [config.rb](https://github.com/alphagov/product-page-example/blob/master/config.rb#L77) sprockets is instructed to look within
+[GOV.UK Frontend] and [GaaP Analytics] are included using [NPM] and bundled in
+on build. You can include more [NPM] modules easily by installing them as a 
+dependency and including paths to them. This works because within [config.rb](https://github.com/alphagov/product-page-example/blob/master/config.rb#L64) sprockets is instructed to look within
 `node_modules/`.
 
 ### Getting started with Google Analytics
@@ -75,8 +74,6 @@ following commands from the root of this project:
 [GOV.UK Notify]: https://www.notifications.service.gov.uk/
 [GOV.UK Registers]: https://registers.cloudapps.digital/
 
-[GOV.UK Elements]: https://github.com/alphagov/govuk_elements
-[GOV.UK Frontend Toolkit]: https://github.com/alphagov/govuk_frontend_toolkit
-[GOV.UK Template]: https://github.com/alphagov/govuk_template
+[GOV.UK Frontend]: https://github.com/alphagov/govuk-frontend
 [GaaP Analytics]: https://github.com/alphagov/gaap-analytics
 [NPM]: https://npmjs.com
