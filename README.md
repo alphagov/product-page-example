@@ -77,3 +77,19 @@ following commands from the root of this project:
 [GOV.UK Frontend]: https://github.com/alphagov/govuk-frontend
 [GaaP Analytics]: https://github.com/alphagov/gaap-analytics
 [NPM]: https://npmjs.com
+
+### Docker Execution
+
+build image
+
+```shell
+docker build -t product-page .
+```
+
+run docker
+
+```shell
+docker run -p 4567:4567 product-page
+```
+
+view in [browser](http://localhost:4567/)

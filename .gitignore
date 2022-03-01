@@ -22,3 +22,6 @@
 
 # PaaS authentication file
 Staticfile.auth
+
+# Local file history 
+.history/*
